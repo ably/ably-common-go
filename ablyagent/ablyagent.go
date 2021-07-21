@@ -74,8 +74,23 @@ var Agents = []*Agent{
 		Versioned:  true,
 	},
 	{
+		Identifier: "windows",
+		Type:       "os",
+		Versioned:  true,
+	},
+	{
+		Identifier: "linux",
+		Type:       "os",
+		Versioned:  true,
+	},
+	{
 		Identifier: "ably-java",
 		Type:       "sdk",
+		Versioned:  true,
+	},
+	{
+		Identifier: "jre",
+		Type:       "runtime",
 		Versioned:  true,
 	},
 	{
@@ -125,6 +140,11 @@ var Agents = []*Agent{
 	},
 	{
 		Identifier: "unity",
+		Type:       "runtime",
+		Versioned:  true,
+	},
+	{
+		Identifier: "python",
 		Type:       "runtime",
 		Versioned:  true,
 	},
