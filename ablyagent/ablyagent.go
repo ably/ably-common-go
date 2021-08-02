@@ -29,7 +29,7 @@ var Agents = []*Agent{
 		Versioned:  true,
 	},
 	{
-		Identifier: "node",
+		Identifier: "nodejs",
 		Type:       "runtime",
 		Versioned:  true,
 	},
@@ -168,6 +168,11 @@ var Agents = []*Agent{
 		Type:       "sdk",
 		Versioned:  true,
 	},
+	{
+		Identifier: "go",
+		Type:       "runtime",
+		Versioned:  true,
+	},
 }
 
 // AblyLibMappings is the "ablyLibMappings" list from protocol/agents.json.
@@ -222,7 +227,7 @@ var AblyLibMappings = []*AblyLibMapping{
 	},
 	{
 		Lib:   "js-node",
-		Agent: "ably-js/${version} node/0.0.0",
+		Agent: "ably-js/${version} nodejs/0.0.0",
 	},
 	{
 		Lib:   "js-ns",
