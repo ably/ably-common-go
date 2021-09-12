@@ -74,6 +74,11 @@ var Agents = []*Agent{
 		Versioned:  true,
 	},
 	{
+		Identifier: "darwin",
+		Type:       "os",
+		Versioned:  true,
+	},
+	{
 		Identifier: "windows",
 		Type:       "os",
 		Versioned:  true,
@@ -96,6 +101,11 @@ var Agents = []*Agent{
 	{
 		Identifier: "android",
 		Type:       "os",
+		Versioned:  true,
+	},
+	{
+		Identifier: "ably-asset-tracking-android",
+		Type:       "wrapper",
 		Versioned:  true,
 	},
 	{
