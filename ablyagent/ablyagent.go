@@ -109,6 +109,11 @@ var Agents = []*Agent{
 		Versioned:  true,
 	},
 	{
+		Identifier: "ably-asset-tracking-swift",
+		Type:       "wrapper",
+		Versioned:  true,
+	},
+	{
 		Identifier: "ably-ruby",
 		Type:       "sdk",
 		Versioned:  true,
