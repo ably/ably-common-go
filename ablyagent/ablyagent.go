@@ -114,6 +114,16 @@ var Agents = []*Agent{
 		Versioned:  true,
 	},
 	{
+		Identifier: "ably-flutter",
+		Type:       "wrapper",
+		Versioned:  true,
+	},
+	{
+		Identifier: "kafka-connect-ably",
+		Type:       "wrapper",
+		Versioned:  true,
+	},
+	{
 		Identifier: "ably-ruby",
 		Type:       "sdk",
 		Versioned:  true,
