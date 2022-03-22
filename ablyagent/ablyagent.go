@@ -184,6 +184,11 @@ var Agents = []*Agent{
 		Versioned:  true,
 	},
 	{
+		Identifier: "php",
+		Type:       "runtime",
+		Versioned:  true,
+	},
+	{
 		Identifier: "laravel",
 		Type:       "wrapper",
 		Versioned:  false,
