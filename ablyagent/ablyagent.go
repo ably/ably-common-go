@@ -119,6 +119,11 @@ var Agents = []*Agent{
 		Versioned:  true,
 	},
 	{
+		Identifier: "dart",
+		Type:       "runtime",
+		Versioned:  true,
+	},
+	{
 		Identifier: "kafka-connect-ably",
 		Type:       "wrapper",
 		Versioned:  true,
