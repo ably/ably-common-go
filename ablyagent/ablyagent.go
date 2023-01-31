@@ -49,6 +49,11 @@ var Agents = []*Agent{
 		Versioned:  false,
 	},
 	{
+		Identifier: "laravel-echo",
+		Type:       "wrapper",
+		Versioned:  true,
+	},
+	{
 		Identifier: "ably-cocoa",
 		Type:       "sdk",
 		Versioned:  true,
@@ -151,27 +156,22 @@ var Agents = []*Agent{
 	{
 		Identifier: "dotnet-framework",
 		Type:       "runtime",
-		Versioned:  true,
+		Versioned:  false,
 	},
 	{
 		Identifier: "dotnet-standard",
 		Type:       "runtime",
-		Versioned:  true,
+		Versioned:  false,
 	},
 	{
-		Identifier: "uwp",
+		Identifier: "xamarin-android",
 		Type:       "runtime",
 		Versioned:  false,
 	},
 	{
-		Identifier: "xamarin",
+		Identifier: "xamarin-iOS",
 		Type:       "runtime",
 		Versioned:  false,
-	},
-	{
-		Identifier: "unity",
-		Type:       "runtime",
-		Versioned:  true,
 	},
 	{
 		Identifier: "python",
@@ -196,7 +196,12 @@ var Agents = []*Agent{
 	{
 		Identifier: "laravel",
 		Type:       "wrapper",
-		Versioned:  false,
+		Versioned:  true,
+	},
+	{
+		Identifier: "laravel-broadcaster",
+		Type:       "wrapper",
+		Versioned:  true,
 	},
 	{
 		Identifier: "ably-go",
@@ -208,10 +213,19 @@ var Agents = []*Agent{
 		Type:       "runtime",
 		Versioned:  true,
 	},
+	{
+		Identifier: "react-hooks",
+		Type:       "wrapper",
+		Versioned:  true,
+	},
 }
 
 // AblyLibMappings is the "ablyLibMappings" list from protocol/agents.json.
 var AblyLibMappings = []*AblyLibMapping{
+	{
+		Lib:   "ably-go",
+		Agent: "ably-go/${version}",
+	},
 	{
 		Lib:   "android",
 		Agent: "ably-java/${version} android/0.0.0",
@@ -234,23 +248,19 @@ var AblyLibMappings = []*AblyLibMapping{
 	},
 	{
 		Lib:   "dotnet.framework",
-		Agent: "ably-dotnet/${version} dotnet-framework/0.0.0",
+		Agent: "ably-dotnet/${version} dotnet-framework",
 	},
 	{
 		Lib:   "dotnet.netstandard20",
-		Agent: "ably-dotnet/${version} dotnet-standard/0.0.0",
-	},
-	{
-		Lib:   "dotnet.uwp",
-		Agent: "ably-dotnet/${version} uwp",
+		Agent: "ably-dotnet/${version} dotnet-standard",
 	},
 	{
 		Lib:   "dotnet.xamarin-android",
-		Agent: "ably-dotnet/${version} xamarin android/0.0.0",
+		Agent: "ably-dotnet/${version} xamarin-android",
 	},
 	{
 		Lib:   "dotnet.xamarin-ios",
-		Agent: "ably-dotnet/${version} xamarin iOS/0.0.0",
+		Agent: "ably-dotnet/${version} xamarin-iOS",
 	},
 	{
 		Lib:   "go",
